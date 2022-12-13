@@ -9,7 +9,18 @@ public class blockbuster{
     public static void main(String[] args){
 
         movies FightClub = new movies("Fight Club", "used", 3.99, 10 );
+        movies Coraline = new movies("Coraline", "new", 2.99, 10);
+        movies ToyStory = new movies("Toy Story 1", "used", 2.99, 10);
+        movies WeddingCrashers = new movies("Wedding Crashers", "new", 3.99, 10);
+        movies TheConjuring = new movies("The Conjuring", "used", 3.99, 10);
+        movies Elf = new movies("Elf", "new", 2.99, 10);
 
+        videogames COD = new videogames("Call of Duty", "used", 4.99, 10);
+        videogames MineCraft = new videogames("MineCraft", "new", 4.99, 10);
+        videogames FortNite = new videogames("FortNite", "used", 4.99, 10);
+        videogames AssassinsCreed = new videogames("Assassin's Creed", "new", 4.99, 10);
+        videogames Halo = new videogames("Halo", "used", 4.99, 10);
+        videogames EldenRing = new videogames("Elden Ring", "used", 4.99, 10);
 
 
 
@@ -23,6 +34,14 @@ public class blockbuster{
             System.out.println("Select an option:");
             ans = sc.nextInt();
             sc.nextLine();
+
+
+            if(ans==1){
+                System.out.println("Pick a movie.");
+                ArrayList<movies> movies = getMovies();
+                String name = sc.nextLine();
+                System.out.println("You will be charged extra for everyday past the return date.");
+            }
         }
     }
 
