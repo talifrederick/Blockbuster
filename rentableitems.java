@@ -5,8 +5,8 @@ public class rentableitems {
     private String condition;
     private double rentFee;
     private String returnBy;
-    private ArrayList<movies> movies;
-    private ArrayList<videogames> videogames;
+    private ArrayList<Movie> movies;
+    private ArrayList<Videogame> videogames;
    // private int numOfItems;
    // private static int totalOrders= 0;
     //private int orderNumber;
@@ -82,29 +82,33 @@ public class rentableitems {
 
 
 
-    public ArrayList<movies> getMovies() {
+    public ArrayList<Movie> getMovies() {
         return movies;
     }
 
 
 
 
-    public void setMovies(ArrayList<movies> movies) {
+    public void setMovies(ArrayList<Movie> movies) {
         this.movies = movies;
     }
 
 
 
 
-    public ArrayList<videogames> getVideogames() {
+    public ArrayList<Videogame> getVideogames() {
         return videogames;
     }
 
 
 
 
-    public void setVideogames(ArrayList<videogames> videogames) {
+    public void setVideogames(ArrayList<Videogame> videogames) {
         this.videogames = videogames;
+    }
+
+    public String toString(){
+        return " Name: " + name + " Condition: " + condition + " Rent Fee: " + getRentFee()+ " Return within: " + returnBy;
     }
 
     

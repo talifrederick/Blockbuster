@@ -1,8 +1,8 @@
-public class videogames extends rentableitems {
+public class Videogame extends rentableitems {
     private String gamingDevice;
     
 
-    public videogames(String name, String condition, double rentFee, String returnBy, String gamingDevice){
+    public Videogame(String name, String condition, double rentFee, String returnBy, String gamingDevice){
         super(name, condition, rentFee, returnBy);
         this.gamingDevice = gamingDevice;
        
@@ -17,6 +17,10 @@ public class videogames extends rentableitems {
 
     public void setGamingDevice(String gamingDevice) {
         this.gamingDevice = gamingDevice;
+    }
+
+    public String toString(){
+        return super.toString() + " Gaming platform: " + gamingDevice;
     }
 
 }
