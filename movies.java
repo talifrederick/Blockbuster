@@ -1,47 +1,30 @@
 public class movies extends rentableitems {
-    private String name;
-    private String condition;
-    private double rentFee;
-    private int returnBy;
 
-    public movies(String name, String condition, double rentFee, int returnBy){
-        this.name = name;
-        this.condition = condition;
-        this.rentFee= rentFee;
-        this.returnBy = returnBy;
+    private String genre;
+    private String rated;
+
+    public movies(String name, String condition, double rentFee, String returnBy, String genre, String rated){
+        super(name, condition, rentFee, returnBy);
+        this.genre = genre;
+        this.rated = rated;
 
     }
 
-    public String getName() {
-        return name;
+
+    public String getGenre() {
+        return genre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
-    public String getCondition() {
-        return condition;
+    public String getRated() {
+        return rated;
     }
 
-    public void setCondition(String condition) {
-        this.condition = condition;
-    }
-
-    public double getRentFee() {
-        return rentFee;
-    }
-
-    public void setRentFee(double rentFee) {
-        this.rentFee = rentFee;
-    }
-
-    public int getReturnBy() {
-        return returnBy;
-    }
-
-    public void setReturnBy(int returnBy) {
-        this.returnBy = returnBy;
+    public void setRated(String rated) {
+        this.rated = rated;
     }
 
     
